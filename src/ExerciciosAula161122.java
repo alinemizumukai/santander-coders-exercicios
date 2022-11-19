@@ -6,7 +6,7 @@ public class ExerciciosAula161122 {
         Scanner scan = new Scanner(System.in);
         System.out.println("***** OPÇÕES *****");
         System.out.println("1 - Imprimir uma tabuada em formato de um triângulo retângulo");
-        System.out.println("2 - Verificar se um número é primo ou não (número primo só é divisível por 1 e por ele mesmo)");
+        System.out.println("2 - Verificar se um número é primo");
         System.out.println("3 - Verificar se o valor faz parte do Fibonacci. Se sim, imprime os próximos 10 valores da sequência.");
         System.out.println("Qual exercício deseja testar?");
         int flag = scan.nextInt();
@@ -29,6 +29,7 @@ public class ExerciciosAula161122 {
         System.out.println("Informe qual a tabuada deseja visualizar: ");
         int tabuada = scan.nextInt();
 
+        System.out.println("\nTabuada do " + tabuada + ":\n");
         for (int i = 1; i <= 10; i++){
             for(int j = 1; j <= i; j++){
                 System.out.print(j * tabuada + " ");
@@ -52,9 +53,9 @@ public class ExerciciosAula161122 {
         }
 
         if(qtdeDivisoes == maxDivisoesPrimo){
-            System.out.println("O número é primo.");
+            System.out.println("O número " + num + " é primo.");
         }else{
-            System.out.println("O número não é primo.");
+            System.out.println("O número " + num + " não é primo.");
         }
     }
 
